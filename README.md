@@ -1,2 +1,1 @@
-# explorerdemo
-explorer_demo
+# hyper-explorer

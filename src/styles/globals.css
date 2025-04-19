@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+html {
+  -webkit-text-size-adjust: 100%;
+  touch-action: manipulation;
+}
+
+body {
+  background-color: #072732;
+  color: #f7f8f8;
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Navigation styles */
+.nav-container {
+  background-color: #0b0e11;
+  border-bottom: 1px solid #1c2127;
+}
+
+/* Custom notification banner */
+.notification-banner {
+  background-color: #51d2c1;
+  color: #0b0e11;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Card styles */
+.card {
+  background-color: #171b20;
+  border: 1px solid #2b3238;
+  border-radius: 8px;
+}
+
+/* Input styles */
+input {
+  background-color: #171b20;
+  border: 1px solid #2b3238;
+  color: #f7f8f8;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+input:disabled {
+  background-color: #161a1f;
+  color: #9ca3af;
+  border-color: #2b3139;
+  cursor: not-allowed;
+}
+
+/* Button styles */
+.button-primary {
+  background-color: #3dd8af;
+  color: #0b0e11;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.button-primary:hover {
+  background-color: #35c69d;
+}
+
+.button-primary:disabled {
+  background-color: #1c2127;
+  color: #4d5359;
+  cursor: not-allowed;
+}
+
+.text-normal {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.transaction-row {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.transaction-row:first-child {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
